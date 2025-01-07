@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Building the Docker image...
       - docker build -t ak-ecs-demo .
-      - docker tag ak-ecs-demo:latest 710876723829.dkr.ecr.eu-central-1.amazonaws.com/ecs-demo:latest
+      - docker tag ak-ecs-demo:latest 710876723829.dkr.ecr.eu-central-1.amazonaws.com/ak-ecs-demo:latest
 
   post_build:
     commands:
