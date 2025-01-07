@@ -16,9 +16,9 @@ phases:
   post_build:
     commands:
       - echo Pushing the Docker image to Amazon ECR...
-      - docker push 710876723829.dkr.ecr.eu-central-1.amazonaws.com/ecs-demo:latest
+      - docker push 710876723829.dkr.ecr.eu-central-1.amazonaws.com/ak-ecs-demo:latest
       - echo Build and push completed successfully.
-      - printf '[{\"name\":\"nginx\",\"imageUri\":\"710876723829.dkr.ecr.eu-central-1.amazonaws.com/ecs-demo:latest\"}]' > imagedefinitions.json
+      - printf '[{\"name\":\"nginx\",\"imageUri\":\"710876723829.dkr.ecr.eu-central-1.amazonaws.com/ak-ecs-demo:latest\"}]' > imagedefinitions.json
       - echo Build and push completed successfully .
  
 artifacts:
