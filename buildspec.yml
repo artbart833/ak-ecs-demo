@@ -19,8 +19,8 @@ phases:
       - docker push 710876723829.dkr.ecr.eu-central-1.amazonaws.com/ecs-demo:latest
       - echo Build and push completed successfully.
       - printf '[{\"name\":\"nginx\",\"imageUri\":\"710876723829.dkr.ecr.eu-central-1.amazonaws.com/ecs-demo:latest\"}]' > imagedefinitions.json
-      - echo Build and push completed successfully.
-
+      - echo Build and push completed successfully .
+ 
 artifacts:
   files:
     - imagedefinitions.json
